@@ -1,0 +1,8 @@
+    history = model.fit(X_train, Y_train, epochs=100, batch_size=16, shuffle=False, 
+                        validation_data=(X_test, Y_test), 
+                        callbacks = [EarlyStopping(monitor='val_loss', min_delta=5e-5, patience=20, verbose=1)])
+
+
+Mean Squared Error is :: 839956.79 
+
+R2 Score : 0.87
